@@ -11,7 +11,7 @@ DIFFICULTY = ["Easy", "Medium", "Hard"]
 
 @app.route("/", methods=["GET", "POST"]) #This is the app/server route
 def index():
-    message = " " #this is the variable that allows you to send messages to the player to help them.
+    message = "" #this is the variable that allows you to send messages to the player to help them.
 
     # Initialise points ONCE before the session starts.
     if "points" not in session:
